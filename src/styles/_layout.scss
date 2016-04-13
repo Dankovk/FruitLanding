@@ -13,10 +13,10 @@
  *
  * @see base/_variable.scss
  */
-$layout-container-width: 940px !default;
+$layout-container-width: 1170px !default;
 
 .layout-container {
-    width: $layout-container-width;
+    width: 1170px;
     margin: 0 auto;
 
     @extend %clearfix;

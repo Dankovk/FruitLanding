@@ -16,4 +16,10 @@
             };
         }
     });
+    $('.arrow-down-scroll').on('click',function(){
+        var windowHeight = $(window).height();
+        $('html body').animate({
+            scrollTop: windowHeight
+        },1000);
+    });
 })(window.jQuery);

@@ -1,64 +1,40 @@
-/* Barebones Compass form styles
- *
- * Form button styles
- */
-
-.btn {
-    letter-spacing: 1px;
-    text-align: center;
-
-    background-image: none;
-
-    margin: 0;
-    outline: 0;
-    border: 0;
-    border-radius: 5px;
-    padding: 5px;
-
-    display: inline-block;
-    vertical-align: middle;
-
-    user-select: none;
-
-    @include button-basic(
-        $bg:        #333, $color:        #fff,
-        $bg-hover:  #777, $color-hover:  #fff,
-        $bg-active: #000, $color-active: #fff
-    );
-}
-
-.btn-primary {
-    @include button-basic(
-        $bg:        #177ee6, $color:        #fff,
-        $bg-hover:  #3d97f2, $color-hover:  #fff,
-        $bg-active: #246bb3, $color-active: #fff
-    );
-}
-
-.btn-block {
-    display: block;
+.btn{
     width: 100%;
-
-    & + & {
-        margin-top: $base-margin / 2;
-    }
-}
-
-.btn-transparent {
-    border: 1px solid #555;
-    background: transparent;
-    outline: 0;
-    text-decoration: none;
-    color: #555;
-}
-
-.btn-disabled {
-    background: #ccc;
-    outline: 0;
-    text-decoration: none;
-
-    &:hover,
-    &:active{
-        background: #ccc;
-    }
+    padding: 10px 32px;
+    position: relative;
+  line-height: 25px;
+    background-color: #c3b618;
+  border: 2px solid #603913;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15px;
+  color: #572c13;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    height: 45px;
+    background-image: url("../images/button-part.png");
+  }
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    transform: rotateZ(-180deg);
+    width: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    height: 45px;
+    background-image: url("../images/button-part.png");
+  }
 }
