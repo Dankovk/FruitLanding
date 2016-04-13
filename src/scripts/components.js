@@ -6,6 +6,15 @@ $(window).on('load', function () {
 });
 
 
+var totalItems = $('#myCarousel .item').length;
+var currentIndex = $('#myCarousel .active').index()+1;
+
+$('#myCarousel').on('slid.bs.carousel', function() {
+    currentIndex = $('#myCarousel .active').index();
+    $('.counter .bold-num').html(''+ currentIndex +'');
+    $('.counter .number-of-slides').html(''+ totalItems +'');
+});
+
 
 $(document).on('slide.bs.carousel','.carousel-top', function(event) {
     var $this   = $(this),
@@ -22,20 +31,19 @@ $(document).on('slide.bs.carousel','.carousel-top', function(event) {
         nextIndex   = $slides.index($next),
         background = $this.find('.slide-background');
 
-    if (targetID === 0) {
-            $left.addClass('hidden');
-            $right.removeClass('hidden');
-        } else if (targetID == itemLength - 1) {
-            $left.removeClass('hidden');
-            $right.addClass('hidden');
-        } else {
-            $left.removeClass('hidden');
-            $right.removeClass('hidden');
-        }
+    //if (targetID === 0) {
+    //        $left.addClass('hidden');
+    //        $right.removeClass('hidden');
+    //    } else if (targetID == itemLength - 1) {
+    //        $left.removeClass('hidden');
+    //        $right.addClass('hidden');
+    //    } else {
+    //        $left.removeClass('hidden');
+    //        $right.removeClass('hidden');
+    //    }
 
     $bg.eq(nextIndex).addClass('active');
     $bg.eq(activeIndex).removeClass('active');
-
     // // Hashnav
     // var hash = $next.data('hash');
 
@@ -62,7 +70,7 @@ $(document).on('slide.bs.carousel','.carousel-top', function(event) {
     });
 
     $('.carousel').carousel({
-        interval: false
+        interval:false
     });
 
     //Make something this HEADER after certain("sDistanse") scroll
