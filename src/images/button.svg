@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="40.2px" viewBox="-388.4 260.8 128 40.2" style="enable-background:new -388.4 260.8 128 40.2;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C3B618;}
+	.st1{fill:#8A8D22;}
+	.st2{fill:#747722;}
+	.st3{fill:#FBE654;}
+	.st4{fill:none;}
+	.st5{clip-path:url(#SVGID_2_);}
+	.st6{fill:none;stroke:#562B12;stroke-width:2;stroke-miterlimit:10;}
+	.st7{fill:#562B12;}
+</style>
+<title>button2</title>
+<rect x="-387.1" y="262.8" class="st0" width="125.6" height="36.2"/>
+<polygon class="st1" points="-265.4,283.3 -261.4,298.8 -260.4,298.8 -260.4,277 -261.3,276 "/>
+<polygon class="st2" points="-261.8,276.6 -260.4,278 -260.4,273.7 "/>
+<polygon class="st2" points="-265.2,283.4 -261,299 -273.5,299 "/>
+<polygon class="st3" points="-262.2,262.4 -273,298.8 -260.4,274.2 -260.4,262.4 "/>
+<g>
+	<rect x="-388.1" y="260.8" class="st4" width="127.8" height="40.2"/>
+</g>
+<polygon class="st1" points="-388.1,284.9 -384.2,278 -388.1,262.9 "/>
+<polygon class="st2" points="-388.1,262.3 -388.1,264.4 -384.5,278 -376.2,262.3 "/>
+<polygon class="st3" points="-388.1,284.9 -388.1,299 -387.4,299 -376.6,262.5 "/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="-388.1" y="260.8" width="127.8" height="40.2"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st5">
+		<line class="st6" x1="-376.3" y1="262.9" x2="-395.4" y2="299"/>
+		<line class="st6" x1="-401.3" y1="271.6" x2="-388.1" y2="285.3"/>
+		<line class="st6" x1="-384.5" y1="278.4" x2="-388.7" y2="263.1"/>
+		<line class="st6" x1="-387.4" y1="299" x2="-376.2" y2="262.3"/>
+	</g>
+</g>
+<path class="st7" d="M-260.4,260.8h-128V301h128V260.8z M-269.1,288.1l6.7-21.8l0,9.2L-269.1,288.1z M-386.4,262.9h122.9l-11,35.8
+	l-111.9,0.2V262.9z M-272.4,298.9l0.2-0.6l6.7-12.7l3,11l0,2.3H-272.4z M-264.1,283l1.7-3.2l0,9.3L-264.1,283z"/>
+</svg>

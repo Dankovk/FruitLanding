@@ -43,3 +43,163 @@
 //        }
 //    }
 //}
+
+
+@media (min-width: 1170px) {
+
+}
+
+
+@media (min-width: 993px){
+  .col-sm-1{
+    display: none;
+  }
+  .col-sm-2{
+    display: none;
+  }
+
+  .layout-container{
+    min-width: 1170px;
+  }
+}
+
+
+@media (min-width: 993px) and (max-width: 1280px) {
+
+}
+
+
+@media (min-width: 750px) and (max-width: 992px) {
+  .layout-container{
+    min-width: 750px;
+    width: 750px;
+  }
+  .items-wrap-small{
+    clear: both;
+    &:after{
+      content: '';
+      display: table;
+      height: 1px;
+      clear: both;
+    }
+  }
+  .head-section{
+    .head-content{
+      width: 750px;
+    }
+  }
+  #myCarousel{
+    .carousel-control-wrap{
+      display: none;
+    }
+  }
+  #CareCarousel{
+    .carousel-control{
+      &.left{
+        right: auto !important;
+        left: 0 !important;
+        top: 176px !important;
+      }
+    }
+  }
+  .who-we{
+    .who-we-wrap{
+      .img-wrap{
+        img{
+          max-width: 100%;
+        }
+      }
+      .btn{
+        margin-top: 15px;
+      }
+    }
+  }
+  .hide-block-cntr{
+    padding-top: 10px;
+    padding-bottom: 0;
+    display: block;
+    font-size: 20px;
+    a{
+      border-radius: 50%;
+      border-radius: 50%;
+      text-decoration: none;
+      border: 1px solid  #0f0f0f;
+      width: 30px;
+      height: 30px;
+      color: #0f0f0f !important;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    margin-top: -25px;
+  }
+  .hide-block{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    &.active{
+      max-height: 500px;
+    }
+  }
+  .margin-row{
+    &:after{
+      display: none;
+    }
+  }
+  .card-itself{
+    margin-bottom: 100px;
+  }
+  .care-descr{
+    h1, h2 {
+      text-align: center;
+    }
+  }
+  .care .care-descr .care-descr-header:after{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .care .cared-descr-bottom-text{
+    padding-top: 0;
+    p{
+      text-align: center;
+    }
+  }
+  .care .care-descr-text p{
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+  .how-it-works .how-card .arrow-cont{
+    display: none;
+  }
+  .how-it-works{
+    .items-wrap-small{
+      margin-bottom: 100px;
+    }
+  }
+  .every-day{
+    display: none;
+  }
+  .layout-footer{
+    height: 262px!important;
+    .btn{
+      width: 250px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .header-divider{
+    height: 200px!important;
+    background-size: contain!important;
+  }
+}
+
+
+@media (max-width: 749px) {
+
+}
+
+
+@media (max-width: 644px) {
+
+}

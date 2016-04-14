@@ -96,6 +96,16 @@ $(document).on('slide.bs.carousel','.carousel-top', function(event) {
             event.stopPropagation();
         });
     //unclosable DROPDOWN END
+    $('.hide-block-cntr').on('click',function(e){
+        e.preventDefault();
+        if(!$('.hide-block').hasClass('active')){
+            $('.hide-block').addClass('active');
+        }else{
+            $('.hide-block').removeClass('active');
+        }
+
+
+    });
 
 })(window.jQuery);
 

@@ -2,14 +2,19 @@
     width: 100%;
     padding: 10px 32px;
     position: relative;
-  line-height: 25px;
     background-color: #c3b618;
   border: 2px solid #603913;
   outline: none;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 15px;
-  color: #572c13;
+  color: #fff;
+  height: 44px;
+  position: relative;
+  transition: color .3s linear;
+  line-height: 23px;
+  cursor: pointer;
+  z-index: 1;
   &:before{
     content: "";
     display: block;
@@ -20,7 +25,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 0;
-    height: 45px;
+    height: 40px;
     background-image: url("../images/button-part.png");
   }
   &:after{
@@ -34,7 +39,30 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: 0;
-    height: 45px;
+    height: 40px;
     background-image: url("../images/button-part.png");
+  }
+  &:hover{
+    color: #572c13;
+  }
+  &.btn-additional{
+    background: transparent;
+    color: #bacf1c;
+    text-transform: none;
+    border: 1px solid transparent;
+    transition: all .3s linear;
+    &:before{
+      display: none;
+    }
+    &:after{
+      display: none;
+    }
+    &:hover{
+      border: 1px solid #bacf1c;
+    }
+    &:active{
+      color: #bacf1c - 40%;
+      border: 1px solid #bacf1c - 40%;
+    }
   }
 }

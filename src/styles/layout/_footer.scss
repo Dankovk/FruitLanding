@@ -4,10 +4,51 @@
  */
 
 .layout-footer {
-    background-color: #f0f2f5;
-
-    @if ($layout-footer-height > 0) {
-        height: $layout-footer-height;
+    background-color: #424242;
+    height: 137px;
+    .footer-item{
+        [class^="fr-"],
+        [class*=" fr-"]{
+            display: inline-block;
+            border: 1px solid #f7e754;
+            padding: 0 5px;
+            font-size: 25px;
+            margin-right: 10px;
+        }
+        [class^="fr-"]:before,
+        [class*=" fr-"]:before{
+            color: #f7e754;
+            vertical-align: middle;
+        }
+        .item-head{
+            h3{
+                display: inline-block;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        .item-content{
+            p{
+                margin-top: 0;
+                color: #fff;
+                margin-bottom: 0;
+                line-height: 1.2;
+            }
+        }
+        &.phone{
+            .item-content{
+                p{
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+    .btn{
+        margin-top: 40px;
     }
 }
 
@@ -24,13 +65,13 @@ $layout-footer-sticky: false !default;
         min-height: 100%;
         height: auto !important;
         height: 100%;
-        margin-bottom: -$layout-footer-height;
+        margin-bottom: -137px;
     }
 
     .layout-content:after {
         content: "";
         display: block;
-        height: $layout-footer-height;
+        height: 137px;
     }
 
     .layout-footer {

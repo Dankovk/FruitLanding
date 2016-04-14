@@ -78,6 +78,22 @@ $font-monospace: Consolas, monaco, monospace;
 
 }
 
+@charset "UTF-8";
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fruit";
+  src:url("fonts/fruit.eot");
+  src:url("fonts/fruit.eot?#iefix") format("embedded-opentype"),
+  url("fonts/fruit.woff") format("woff"),
+  url("fonts/fruit.ttf") format("truetype"),
+  url("fonts/fruit.svg#fruit") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 [data-icon]:before {
   font-family: "fruit" !important;
   content: attr(data-icon);
@@ -107,9 +123,18 @@ $font-monospace: Consolas, monaco, monospace;
 .fr-arrow:before {
   content: "\61";
 }
-.fr-vk:before {
-  content: "\62";
-}
 .fr-fb:before {
   content: "\63";
+}
+.fr-vk:before {
+  content: "\64";
+}
+.fr-map:before {
+  content: "\65";
+}
+.fr-mail:before {
+  content: "\66";
+}
+.fr-phone:before {
+  content: "\62";
 }
