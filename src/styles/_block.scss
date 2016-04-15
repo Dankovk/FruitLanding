@@ -817,6 +817,8 @@ a{
        font-size: 32px;
        font-weight: 700;
        margin-top: 25px;
+       margin-bottom: 10px;
+       margin-top: 15px;
      }
    }
    .header-right{
@@ -826,14 +828,23 @@ a{
        font-weight: 400;
        font-size: 32px;
        margin-top: 25px;
+       margin-bottom: 10px;
+       margin-top: 15px;
 
      }
    }
  }
+  .header-modal{
+  @extend %clearfix;
+    border-bottom: 1px solid #e1e1e1;
+}
   .first-block{
     h3{
       clear: left;
+      margin-top: 10px;
     }
+    border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
   }
   .modal-main{
     padding: 0 15px;
@@ -841,6 +852,21 @@ a{
   .menu-block{
     float: left;
     width: 264px;
+    h4{
+      margin-bottom: 0;
+      padding-left: 20px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    ul{
+      margin: 0;
+      li{
+        margin: 5px 0;
+        list-style-image: url(../images/list-yellow.jpg);
+        font-size: 16px;
+        line-height: 1.2;
+      }
+    }
+    margin-right: 100px;
   }
   .menu-row{
     @extend %clearfix;
@@ -869,6 +895,79 @@ a{
       font-size: 27px;
       margin-top: 10px;
       margin-bottom: 0px;
+    }
+  }
+  .modal-btn{
+    padding: 50px 0;
+    .btn{
+      width: 360px;
+      display: block;
+      margin: 0 auto;
+      height: 50px;
+      text-align: center;
+      font-size: 22px;
+      line-height: 27px;
+      &:before{
+        height: 46px;
+      }
+      &:after{
+        height: 46px;
+      }
+    }
+  }
+  .close{
+    cursor: pointer;
+    opacity: .5;
+    top:-40px;
+    right: 0;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    z-index: 111;
+    transition: opacity .3s linear;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+.blog-head{
+  height: 400px;
+  background-image: url('../images/blog-bg.png');
+  background-size: cover;
+  background-position: center center;
+}
+.blog-post{
+  margin-top: -100px;
+  .blog-img-cont{
+    img{
+      max-width: 100%;
+    }
+  }
+  .blog-header{
+    line-height: 65px;
+    h2{
+      margin-top: 0px;
+      float: left;
+    }
+    .blog-date{
+      float: right;
+      font-weight: 700;
+    }
+    @extend %clearfix
+  }
+  ul{
+    text-align: left;
+    li{
+      list-style-image: url("../images/list-style.png");
+      font-size: 18px;
     }
   }
 }

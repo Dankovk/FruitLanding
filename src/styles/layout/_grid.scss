@@ -202,5 +202,93 @@
 
 
 @media (max-width: 644px) {
-
+  .layout-container{
+    width: 320px;
+  }
+  .allow-you{
+    .allow-wrap{
+      padding-top: 30px;
+    }
+  }
+  .allow-you .allow-block .descr .header-cont {
+    line-height: 38px;
+    text-align: center;
+    min-height: 43px;
+    margin-top: 10px;
+  }
+  .allow-you .allow-block .descr p{
+    margin-top: 0;
+  }
+  .who-we{
+    .who-we-wrap{
+      .img-wrap{
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .header-divider{
+    background-attachment: scroll!important;
+    background-size: cover!important;
+  }
+  .how-it-works .how-card .how-num{
+    z-index: -1;
+  }
+  .how-it-works .how-it-works-wrap{
+    padding-top: 90px;
+  }
+  .blog .blog-wrapper{
+    padding-top: 50px;
+  }
+  .layout-footer{
+    height: 440px!important;
+    padding-top: 20px;
+  }
+  .layout-content:after {
+    content: "";
+    display: block;
+    height: 50px!important;
+  }
+  .every-day h2{
+    margin-top: 0px;
+  }
+  .how-it-works .how-card .arrow-cont{
+    display: none;
+  }
+  .how-it-works {
+    padding-bottom: 50px;
+  }
+  .care {
+    padding-bottom: 50px;
+  }
+  .care .header-divider{
+    margin-bottom: 50px;
+  }
+  .programs .cards-row{
+    margin-bottom: 0;
+  }
+  .programs{
+    .card-itself{
+      margin-bottom: 80px;
+    }
+  }
+  .margin-row{
+    margin-bottom: 0;
+  }
+  .programs .programs-header h2{
+    margin-top: 20px;
+  }
+  .programs .programs-header{
+    padding-bottom: 50px;
+  }
+  .who-we{
+    padding-bottom: 50px;
+  }
+  .who-we .who-we-wrap{
+    padding-top: 50px;
+  }
+  .layout-content{
+    padding-top: 50px!important;
+  }
 }
