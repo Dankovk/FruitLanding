@@ -70,6 +70,9 @@
 
 
 @media (min-width: 750px) and (max-width: 992px) {
+  .details-modal .modal-dialog {
+    width: 550px;
+  }
   .layout-container{
     min-width: 750px;
     width: 750px;
@@ -193,6 +196,26 @@
     background-attachment: scroll!important;
     background-size: cover!important;
   }
+  .details-modal{
+    .modal-dialog{
+      height: 323px;
+      top: 21%;
+      .modal-content{
+        .img-cont{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .details-modal .modal-dialog .header-right {
+    float: left;
+    text-align: right;
+    h3{
+      margin-top: -11px;
+    }
+  }
 }
 
 
@@ -201,7 +224,7 @@
 }
 
 
-@media (max-width: 644px) {
+@media (max-width: 749px) {
   .layout-container{
     width: 320px;
   }
@@ -231,6 +254,7 @@
   .header-divider{
     background-attachment: scroll!important;
     background-size: cover!important;
+    height: 200px!important;
   }
   .how-it-works .how-card .how-num{
     z-index: -1;
@@ -290,5 +314,81 @@
   }
   .layout-content{
     padding-top: 50px!important;
+  }
+  #myCarousel{
+    .carousel-control-wrap{
+      display: none;
+    }
+  }
+  #CareCarousel{
+    .carousel-control{
+      &.left{
+        right: auto !important;
+        left: 0 !important;
+        top: 176px !important;
+      }
+    }
+  }
+  .arrow-down-scroll{
+    display: none;
+  }
+  .head-content{
+    width: 100%!important;
+  }
+  .head-wrap h2{
+    font-size: 27px;
+  }
+  .head-content{
+  }
+  .head-wrap h3{
+    font-size: 16px;
+  }
+  .details-modal{
+    .modal-dialog{
+      height: 323px;
+      top: 21%;
+      .modal-content{
+        .img-cont{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .details-modal .modal-dialog .header-right {
+    float: left;
+    text-align: left;
+    h3{
+      margin-top: -11px;
+    }
+  }
+  .modal-dialog {
+    width: 300px;
+  }
+  .programs .card-itself{
+    height: 420px;
+  }
+  .programs .card-itself .bold-headr {
+    display: inline-block;
+    font-weight: 800;
+    color: #c4b815;
+    line-height: 33px;
+    font-size: 20px;
+  }
+  .programs .card-itself .card-header {
+    padding-top: 91px;
+    padding-bottom: 16px;
+  }
+  .order-modal .modal-dialog {
+    width: 320px;
+  }
+  .order-modal .modal-dialog .btn {
+    width: 266px;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 22px;
+    margin-top: 45px;
   }
 }
