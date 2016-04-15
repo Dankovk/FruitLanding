@@ -8,6 +8,7 @@
   height: 137px;
   position: fixed;
   background-color: rgba(0,0,0,.6);
+  transition: opacity .2s linear;
   left: 0;
   right: 0;
   top: 0;
@@ -712,4 +713,103 @@ a{
 .margin-row{
   margin-bottom: 100px;
   @extend %clearfix;
+}
+.head-content{
+  .col-lg-2{
+    display: block!important;
+  }
+}
+.modal{
+  z-index: 9999999999;
+  &.in{
+    opacity: 1;
+  }
+  .modal-header{
+    border-bottom: none;
+  }
+}
+.modal-open{
+  .layout-header{
+    opacity: 0;
+  }
+}
+.order-modal{
+  .modal-dialog{
+    width: 600px;
+   .modal-content{
+     border-radius: 0;
+     padding-top: 30px;
+     padding-left: 10px;
+     padding-right: 10px;
+     padding-bottom: 10px;
+   }
+  .btn{
+    width: 360px;
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 22px;
+    margin-top: 45px;
+    &:before{
+      height: 57px;
+    }
+    &:after{
+      height: 57px;
+    }
+  }
+  }
+  h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+.modal-header{
+  padding-bottom: 0;
+  .close{
+    cursor: pointer;
+    opacity: .5;
+    top:-40px;
+    right: 0;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    z-index: 111;
+    transition: opacity .3s linear;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+}
+.modal-dialog{
+  position: absolute;
+  top:45%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%)!important;
+}
+.form-control{
+  height: 60px;
+  padding-left: 20px;
+  color: #000;
+  font-size: 18px;
+  &::placeholder{
+    color: #000;
+  }
+}
+.details-modal{
+ .modal-dialog{
+   width: auto;
+   .modal-content{
+     border-radius: 0;
+   }
+ }
 }

@@ -190,7 +190,8 @@
   }
   .header-divider{
     height: 200px!important;
-    background-size: contain!important;
+    background-attachment: scroll!important;
+    background-size: cover!important;
   }
 }
 
