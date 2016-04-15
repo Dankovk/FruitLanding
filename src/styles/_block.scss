@@ -972,8 +972,6 @@ a{
   }
 }
 
-
-
 .close-menu{
   display: none;
 }
@@ -982,4 +980,11 @@ a{
 }
 
 
-
+.thank-you-modal{
+  .thank-you-img{
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
