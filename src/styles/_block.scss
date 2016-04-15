@@ -3,7 +3,7 @@
  * General block styles
  */
 .layout-header{
-  overflow: hidden;
+  // overflow: hidden;
   font-family: 'ProximaNova';
   height: 137px;
   position: fixed;
@@ -115,7 +115,7 @@ h3{
 }
 .arrow-down-scroll{
   position: absolute;
-  z-index: 11111111;
+  z-index: 11;
   bottom: 20px;
   width: 44px;
   height: 44px;
@@ -971,3 +971,15 @@ a{
     }
   }
 }
+
+
+
+.close-menu{
+  display: none;
+}
+.menu-icon{
+  display: none;
+}
+
+
+

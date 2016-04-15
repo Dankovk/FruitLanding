@@ -22,4 +22,8 @@
             scrollTop: windowHeight
         },1000);
     });
+
+    $(document).on('click touchstart', '.menu-icon, .close-menu', function(){
+        $('.layout-header, .menu-icon, .menu-conent').toggleClass('active');
+    });
 })(window.jQuery);
