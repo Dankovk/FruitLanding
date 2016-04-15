@@ -981,10 +981,41 @@ a{
 
 
 .thank-you-modal{
+  .modal-content{
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
   .thank-you-img{
     img{
       display: block;
       margin: 0 auto;
     }
+  }
+  .text{
+    h2{
+      font-weight: 400;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  .close{
+    cursor: pointer;
+    opacity: .5;
+    top: -40px;
+    right: 0;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    z-index: 111;
+    transition: opacity .3s linear;
+    border: 1px solid #fff;
+    border-radius: 50%;
   }
 }
